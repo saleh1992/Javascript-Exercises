@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+        // Code One 
+        /* will not work object must be affter Html element  */
+        document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+        // Code Two
+        /* will not work unless you reload the page   */
+        window.onload = function () {
+            document.getElementById("el").style.color = "red";
+        };
+    </script>
+</head>
+
+<body>
+    <h1 id="el">Page Title</h1>
+    <script>
+        // Code Three
+        document.getElementById("el").style.color = "red";
+    </script>
+</body>
+
+</html>
